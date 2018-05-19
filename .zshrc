@@ -72,40 +72,15 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-source "${HOME}/.config/secrets.sh"
-source "${HOME}/github/dopsonbr/dotfiles/thd_defaults.sh"
-
 #test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 alias nv=nvim
 alias vi=nvim
-alias gh="cd ${HOME}/github/homedepot"
-alias ga="cd ${HOME}/github/homedepot/assistedselling"
-alias gd="cd ${HOME}/github/dopsonbr"
-
-cfLoginNP () {
-  cf login \
-    -u "${CF_LOGIN_USR}" \
-    -p "${CF_LOGIN_PSW}" \
-    -a "${CF_API_ENDPOINT}" \
-    -o "${CF_ORG}" \
-    -s "${CF_SPACE}" \
-    --skip-ssl-validation
-}
 
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias tl=todolist
-alias dc=docker-compose
-
-export SCALA_HOME='/usr/local/opt/scala/idea'
-if [[ -f "${HOME}/google-cloud-sdk" ]]; then 
-  source "${HOME}/google-cloud-sdk/completion.zsh.inc"
-  source "${HOME}/google-cloud-sdk/path.zsh.inc"
-  export GOOGLE_APPLICATION_CREDENTIALS='Call box-1a7eac808445.json'
-fi
 
 # this must be the last line
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-alias gs="git status"

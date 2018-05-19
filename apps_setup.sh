@@ -10,20 +10,14 @@ fi
 APPS=( 'bash' \
     'coreutils --with-default-names' \
     'findutils --with-default-names' \
-    'fzf' \
     'git' \
-    'golang' \
     'gradle' \
     'httpie' \
     'kafkacat' \
     'maven' \
-    'node' \
     'nginx' \
     'python3' \
-    'sbt' \
-    'scala' \
     'shellcheck' \
-    'the_silver_searcher' \
     'tree' \
     'zsh-syntax-highlighting' \
     'Caskroom/cask/google-chrome' \
@@ -31,7 +25,8 @@ APPS=( 'bash' \
     'Caskroom/cask/java' \
     'neovim/neovim/neovim' \
     'Caskroom/cask/shiftit' \
-    'caskroom/cask/insomnia' )
+    'caskroom/cask/postman' \
+    'caskroom/cask/visual-studio-code')
 
 for app in "${APPS[@]}"; do
   brew install $app || brew upgrade $app

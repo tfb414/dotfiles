@@ -8,7 +8,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 $(brew --prefix)/opt/fzf/install
 
-ln -s "${HOME}/github/dopsonbr/dotfiles/.zshrc" "${HOME}/.zshrc"
-ln -s "${HOME}/github/dopsonbr/dotfiles/tmux.conf" "${HOME}/.tmux.conf"
+ln -s "${HOME}/Development/dotfiles/.zshrc" "${HOME}/.zshrc"
 
 echo "end zsh setup"
