@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# install n
+which n
+r=$?
+if [ $r == 0 ]; then
+  /usr/bin/ruby -e "$(curl -L https://git.io/n-install)"
+fi
+
 # install brew
 which brew
 r=$?
