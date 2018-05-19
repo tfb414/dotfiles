@@ -26,7 +26,8 @@ APPS=( 'bash' \
     'neovim/neovim/neovim' \
     'Caskroom/cask/shiftit' \
     'caskroom/cask/postman' \
-    'caskroom/cask/visual-studio-code')
+    'caskroom/cask/visual-studio-code' \
+    'yarn --without-node')
 
 for app in "${APPS[@]}"; do
   brew install $app || brew upgrade $app
